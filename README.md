@@ -1,3 +1,5 @@
+# _Cevaplar hmwrk3 branch içerisinde bulunmaktadır._
+
 ActiveMQ, Kafka ve RabbitMQ karşılaştırın. Örnek kodlar ile nasıl çalıştığını
 anlatın. (10 Puan)
 
