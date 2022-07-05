@@ -6,8 +6,8 @@ import com.karakurt.homework3.Entities.User.IUser;
 import com.karakurt.homework3.Needs.DateOperations;
 
 public interface ICustomer extends DateOperations {
-    Integer getId();
-    void setId(Integer id);
+    Long getId();
+    void setId(Long id);
     IUser getIUser();
     void setIUser(IUser iUser);
     IOrder getOrder();

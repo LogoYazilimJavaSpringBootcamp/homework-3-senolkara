@@ -13,7 +13,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 public class Customer implements ICustomer {
-    private Integer id;
+    private Long id;
     private IUser iUser;
     private IOrder order;
     private LocalDate createdDT = DateOperations.createdDT;

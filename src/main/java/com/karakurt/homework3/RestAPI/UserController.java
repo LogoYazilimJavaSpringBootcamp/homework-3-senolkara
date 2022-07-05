@@ -25,12 +25,12 @@ public class UserController {
     }
 
     @PatchMapping("/{id}")
-    public IUser updateUser(@PathVariable Integer id, String firstName, String lastName, String email, String address){
+    public IUser updateUser(@PathVariable Long id, String firstName, String lastName, String email, String address){
         return this.iUserService.updateUser(id, firstName, lastName, email, address);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteUser(@PathVariable Integer id){
+    public void deleteUser(@PathVariable Long id){
         this.iUserService.deleteUser(id);
     }
 }

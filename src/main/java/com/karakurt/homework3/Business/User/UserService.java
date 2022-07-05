@@ -24,12 +24,12 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public IUser updateUser(Integer id, String firstName, String lastName, String email, String address) {
+    public IUser updateUser(Long id, String firstName, String lastName, String email, String address) {
         return this.iUserDao.updateUser(id, firstName, lastName, email, address);
     }
 
     @Override
-    public void deleteUser(Integer id) {
+    public void deleteUser(Long id) {
         this.iUserDao.deleteUser(id);
     }
 }

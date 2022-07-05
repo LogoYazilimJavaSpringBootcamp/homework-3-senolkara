@@ -24,12 +24,12 @@ public class ProductService implements IProductService {
     }
 
     @Override
-    public IProduct updateProduct(Integer id, String name, Double price){
+    public IProduct updateProduct(Long id, String name, Double price){
         return this.iProductDao.updateProduct(id, name, price);
     }
 
     @Override
-    public void deleteProduct(Integer id){
+    public void deleteProduct(Long id){
         this.iProductDao.deleteProduct(id);
     }
 }

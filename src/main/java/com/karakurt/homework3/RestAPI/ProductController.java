@@ -25,12 +25,12 @@ public class ProductController {
     }
 
     @PatchMapping("{id}")
-    public IProduct updateProduct(@PathVariable Integer id, String name, Double price){
+    public IProduct updateProduct(@PathVariable Long id, String name, Double price){
         return this.iProductService.updateProduct(id, name, price);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteProduct(@PathVariable Integer id){
+    public void deleteProduct(@PathVariable Long id){
         this.iProductService.deleteProduct(id);
     }
 }

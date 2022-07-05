@@ -8,6 +8,6 @@ import java.util.List;
 public interface IUserDao {
     List<IUser> getRandomUsers();
     IUser createUser(String firstName, String lastName, String email, String address);
-    IUser updateUser(Integer id, String firstName, String lastName, String email, String address);
-    void deleteUser(Integer id);
+    IUser updateUser(Long id, String firstName, String lastName, String email, String address);
+    void deleteUser(Long id);
 }

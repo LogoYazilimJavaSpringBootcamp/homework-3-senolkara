@@ -11,6 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 public class Order implements IOrder {
+    private Long id;
     private LocalDate createdDT = DateOperations.createdDT;
     private OrderStatus orderStatus;
     private List<IProduct> productList;

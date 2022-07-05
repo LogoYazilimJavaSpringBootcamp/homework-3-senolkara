@@ -6,6 +6,8 @@ import com.karakurt.homework3.Needs.DateOperations;
 import java.util.List;
 
 public interface IOrder extends DateOperations {
+    Long getId();
+    void setId(Long id);
     List<IProduct> getProductList();
     void setProductList(List<IProduct> productList);
     OrderStatus getOrderStatus();
